@@ -1,0 +1,25 @@
+{
+  "name": "@keom/toolbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --outDir dist",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint --ext .ts src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "tsup": "^8.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "pino": "^8.17.1",
+    "pino-pretty": "^10.3.0"
+  }
+}

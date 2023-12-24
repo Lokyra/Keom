@@ -1,5 +1,5 @@
 {
-  "name": "NextLink",
+  "name": "keom",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -8,13 +8,14 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "prettier": "^3.1.0",
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.1"
   }
 }
